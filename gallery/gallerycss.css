@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+  <style>
+    /* Reset basic styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+/* Gallery Row */
+.alime-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual gallery item */
+.single_gallery_item {
+  position: relative;
+  width: calc(25% - 20px); /* Responsive size */
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.single_gallery_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.single_gallery_item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Content */
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.single_gallery_item:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-content a {
+  color: #fff;
+  font-size: 2rem;
+  background: #3a3a64;
+  padding: 10px 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.3s;
+}
+
+.hover-content a:hover {
+  background: #6a67d3;
+  transform: scale(1.2);
+}
+
+/* View More Button */
+.btn {
+  background-color: #3a3a64;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #6a67d3;
+}
+
+/* Instagram Section */
+.follow-area {
+  margin-top: 40px;
+  background-color: #252540;
+  padding: 20px 0;
+}
+
+.follow-area h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.follow-area p a {
+  color: #6a67d3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.follow-area p a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .single_gallery_item {
+      width: calc(33.333% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .single_gallery_item {
+      width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .single_gallery_item {
+      width: calc(100% - 20px);
+  }
+}
+
+  </style>
+</head>
+
+  <body>
+   
+        <div class="row alime-portfolio">
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (1).jpg"
+                alt="Image 1"
+              />
+              <div class="hover-content">
+                <a
+                  href="img1 (1).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img1 (2).jpg" alt="Image 2" />
+              <div class="hover-content">
+                <a href="img1 (2).jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (3).jpg"
+                alt="Image 3"
+              />
+              <div class="hover-content">
+                <a
+                  href="img1 (4).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+
+          <div
+          class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+          data-wow-delay="500ms"
+        >
+          <div class="single-portfolio-content">
+            <img
+              src="img1 (4).jpg"
+              alt="Image 4"
+            />
+            <div class="hover-content">
+              <a
+                href="img1 (4).jpg"
+                class="portfolio-img"
+                >+</a
+              >
+            </div>
+          </div>
+        </div>
+
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="700ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img1 (5).jpg" alt="Image 5" />
+              <div class="hover-content">
+                <a href="img1 (5).jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img1 (6).jpg" alt="Image 6" />
+              <div class="hover-content">
+                <a
+                  href="img1 (6).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (7).jpg"
+                alt="Image 7"
+              />
+              <div class="hover-content">
+                <a
+                  href="img1 (7).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img1 (8).jpg" alt="Image 8" />
+              <div class="hover-content">
+                <a href="img1 (8).jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+            data-wow-delay="700ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img1 (9).jpg" alt="Image 9" />
+              <div class="hover-content">
+                <a
+                  href="img1 (9).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (10).jpg"
+                alt="Image 10"
+              />
+              <div class="hover-content">
+                <a
+                  href="img1 (10).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (11).jpg"
+                alt="Image 11"
+              />
+              <div class="hover-content">
+                <a href="img1 (11).jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (12).jpg"
+                alt="Image 12"
+              />
+              <div class="hover-content">
+                <a
+                  href="img1 (12).jpg"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+            data-wow-delay="700ms"
+          >
+            <div class="single-portfolio-content">
+              <img
+                src="img1 (13).png"
+                alt="Image 13"
+              />
+              <div class="hover-content">
+                <a
+                  href="img1 (13).png"
+                  class="portfolio-img"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+            <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="follow-area clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>Follow Instagram</h2>
+              <p>
+                <a href="https://www.instagram.com/my_gallery_4u/"
+                  >@my_gallery_4u</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Modal for Image Viewer -->
+     <div id="imageModal" class="modal" style="display: none;">
+      <div class="modal-content">
+          <button id="closeModal" class="modal-close">X</button>
+          <button id="prevImage" class="modal-nav" disabled>←</button>
+          <img id="modalImage" src="" alt="Full Image">
+          <button id="nextImage" class="modal-nav">→</button>
+      </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    let images = $('.single_gallery_item img').map(function () {
+        return $(this).attr('src');
+    }).get();
+
+    let currentIndex = 0;
+
+    // Zoom out on hover
+    $('.single_gallery_item img').hover(
+        function () {
+            $(this).css('transform', 'scale(0.9)');
+        },
+        function () {
+            $(this).css('transform', 'scale(1)');
+        }
+    );
+
+    // Open modal
+    $('.portfolio-img').on('click', function (e) {
+        e.preventDefault();
+        currentIndex = $(this).closest('.single_gallery_item').data('index');
+        openModal();
+    });
+
+    function openModal() {
+        $('#modalImage').attr('src', images[currentIndex]);
+        $('#imageModal').fadeIn();
+        updateNavButtons();
+    }
+
+    // Close modal
+    $('#closeModal').on('click', function () {
+        $('#imageModal').fadeOut();
+    });
+
+    // Navigation buttons
+    $('#prevImage').on('click', function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            openModal();
+        }
+    });
+
+    $('#nextImage').on('click', function () {
+        if (currentIndex < images.length - 1) {
+            currentIndex++;
+            openModal();
+        }
+    });
+
+    function updateNavButtons() {
+        $('#prevImage').prop('disabled', currentIndex === 0);
+        $('#nextImage').prop('disabled', currentIndex === images.length - 1);
+    }
+});
+
+  </script>
+
+    
+</body>
+</html>
